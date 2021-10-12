@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "esnext",
+        "sourceMap": false,
+        "removeComments": true,
+        "outDir": "dist"
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
