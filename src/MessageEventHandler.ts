@@ -1,6 +1,5 @@
 import { MessageHandlerFactory } from "./handlers/MessageHandlerFactory";
-import { IRequest } from "./IRequest";
-import { IResponse } from "./IResponse";
+import { IRequest, IResponse } from "yhome-cds-interface/dist/index";
 
 export class MessageEventHandler {
     private readonly _messageHandlerFactory: MessageHandlerFactory;

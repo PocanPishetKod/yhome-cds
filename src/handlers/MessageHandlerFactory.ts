@@ -1,4 +1,4 @@
-import { RequestType } from "../RequestType";
+import { RequestType } from "../../../yhome-cds-interface/dist/index";
 import { TokenStorage } from "../store/TokenStorage";
 import { GetMessageHandler } from "./GetMessageHandler";
 import { IMessageHandler } from "./IMessageHandler";
