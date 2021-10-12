@@ -1,7 +1,7 @@
 {
-    "name": "yhome-auth",
+    "name": "yhome-cds",
     "version": "1.0.0",
-    "description": "Authentication library",
+    "description": "Cross-domain storage",
     "main": "dist/main.js",
     "types": "dist/main.d.ts",
     "files": [

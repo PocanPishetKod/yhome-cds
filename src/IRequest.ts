@@ -1,7 +1,7 @@
-import { MessageMethod } from "./handlers/IMessage";
+import { RequestType } from "./RequestType";
 
 export interface IRequest {
-    messageMethod: MessageMethod;
+    requestType: RequestType;
     clientId: string;
     userId: string;
     token: string;

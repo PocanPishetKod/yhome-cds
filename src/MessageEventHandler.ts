@@ -20,7 +20,7 @@ export class MessageEventHandler {
 
     public handle(event: MessageEvent<string>): void {
         let request = this.parseRequest(event.data);
-        let handler = this._messageHandlerFactory.create(request.messageMethod);
+        let handler = this._messageHandlerFactory.create(request.requestType);
         try {
             let result = handler.handle(request);
             this.sendResponse({ ok: true, token: result.token }, 
