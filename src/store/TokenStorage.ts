@@ -1,17 +1,16 @@
+const tokenKey: string = "_token_key";
+
 export class TokenStorage {
-    private buildKey(clientId: string, userId: string): string {
-        return clientId + userId;
+
+    public save(token: string): void {
+        localStorage.setItem(tokenKey, token);
     }
 
-    public save(clientId: string, userId: string, token: string): void {
-        localStorage.setItem(this.buildKey(clientId, userId), token);
+    public get(): string {
+        return localStorage.getItem(tokenKey);
     }
 
-    public get(clientId: string, userId: string): string {
-        return localStorage.getItem(this.buildKey(clientId, userId));
-    }
-
-    public remove(clientId: string, userId: string): void {
-        localStorage.removeItem(this.buildKey(clientId, userId));
+    public remove(): void {
+        localStorage.removeItem(tokenKey);
     }
 }

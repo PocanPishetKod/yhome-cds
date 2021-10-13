@@ -11,7 +11,7 @@ export class GetMessageHandler implements IMessageHandler {
     }
 
     public handle(message: IMessage): IMessageHandlerResult {
-        let token = this._tokenStorage.get(message.clientId, message.userId);
+        let token = this._tokenStorage.get();
 
         if (token == null) {
             throw new Error("token not found");

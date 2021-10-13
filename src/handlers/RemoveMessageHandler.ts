@@ -11,7 +11,7 @@ export class RemoveMessageHandler implements IMessageHandler {
     }
 
     public handle(message: IMessage): IMessageHandlerResult {
-        this._tokenStorage.remove(message.clientId, message.userId);
+        this._tokenStorage.remove();
         return { token: null };
     }
 }

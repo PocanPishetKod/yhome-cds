@@ -11,7 +11,7 @@ export class SaveMessageHandler implements IMessageHandler {
     }
 
     public handle(message: IMessage): IMessageHandlerResult {
-        this._tokenStorage.save(message.clientId, message.userId, message.token);
+        this._tokenStorage.save(message.token);
         return { token: null };
     }
 }
