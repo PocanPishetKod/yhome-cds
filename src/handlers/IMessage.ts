@@ -1,3 +1,3 @@
 export interface IMessage {
-    token: string;
+    token?: string;
 }
